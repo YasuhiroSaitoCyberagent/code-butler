@@ -53,6 +53,7 @@ const codeReviewSystemPrompt = `
           "yes\\\\no question: Does this PR code introduce possible security concerns or issues, such as SQL injection, XSS, CSRF, and others? If you answered 'yes,' briefly explain your answer."
       
       Don't repeat the prompt in the answer, and avoid outputting the 'type' and 'description' fields.
+      Please answer in Japanese.
 `
 
 const chatSystemPrompt = `
@@ -60,6 +61,7 @@ const chatSystemPrompt = `
     Your task is to chat with the user, and respond to questions from troubled software developers and solve their problems.
     Please ignore the '/chat' at the beginning of the question.
     Also, don't repeat the prompt in your answer.
+    Please answer in Japanese.
 `
 
 export function getCodeReviewSystemPrompt(): string {
